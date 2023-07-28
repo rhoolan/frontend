@@ -1,0 +1,94 @@
+:root {
+    --background: #E1E8EE;
+    --secondary: #76b5c5;
+}
+
+body {
+    background-color: #E1E8EE;
+    font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+}
+
+#form-title {
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+}
+
+#login {
+    background-color: var(--secondary);
+    width: 300px;
+    height: 300px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px;
+    border-radius: 15px;
+    position: absolute;
+    margin: auto;
+}
+
+.input {
+    display: block;
+    outline: none;
+    border: 0px;
+    height: 30px;
+    line-height: 30px;
+    padding: 8px 15px;
+    border-bottom: 1px solid #eee;
+    font-size: 12px;
+    width: 90%;
+    cursor: text;
+
+}
+    .input:nth-child(1n){
+        border-radius: 15px 15px 0px 0px;
+    }
+    .input:nth-child(2n) {
+        border-bottom: 0;
+        border-radius: 0px 0px 15px 15px;
+}
+
+#submit-btn {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: beige;
+    border: 0;
+    border-radius: 15px;
+    display: block;
+    opacity: 1;
+    width: 100%;
+    height: 50px;
+    font-weight: bold;
+    padding: 15px 45px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+        transition: all .3s ease;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+}
+
+
+/* Account sign up*/
+form>p {
+    color:#fff;
+    text-align: center;
+    margin-top: -22px;
+    font-size: 15px;
+}
+
+form>p>a {
+    color:black;
+    font-weight: bold;
+}
+
+form>p>a:hover {
+    color: lightseagreen;
+}
+
+form>p>a:active {
+    color: black;
+}
