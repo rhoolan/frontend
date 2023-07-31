@@ -30,5 +30,4 @@ function displayAnswer(value, answer){
     } else {
         document.getElementById("answer").innerHTML = value + " is not prime";
     }
-
 }
