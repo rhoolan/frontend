@@ -23,5 +23,5 @@ decrement.addEventListener('click', ()=>{
 
 function displayCount() {
     counter.innerHTML = "値：" + count;
-}
+};
 
