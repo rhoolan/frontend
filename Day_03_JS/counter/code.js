@@ -1,4 +1,5 @@
 let count = 0;
+const BASE_TEXT = "値：";
 let counter = document.getElementById("text-result");
 let reset = document.getElementById("reset-button");
 let increment = document.getElementById("increment-button");
@@ -22,6 +23,6 @@ decrement.addEventListener('click', ()=>{
 });
 
 function displayCount() {
-    counter.innerHTML = "値：" + count;
+    counter.innerHTML = BASE_TEXT + count;
 };
 
