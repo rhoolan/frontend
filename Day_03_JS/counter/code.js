@@ -6,18 +6,22 @@ let decrement = document.getElementById("decrement-button");
 
 reset.addEventListener('click', ()=>{
     count = 0;
-    counter.innerHTML = "値：" + count;
+    displayCount()
 });
 
 console.log(counter);
 increment.addEventListener('click', ()=>{
     count++;
-    counter.innerHTML = "値：" + count;
+    displayCount()
 });
 
 console.log(counter);
 decrement.addEventListener('click', ()=>{
     count--;
-    counter.innerHTML = "値：" + count;
+    displayCount()
 });
+
+function displayCount() {
+    counter.innerHTML = "値：" + count;
+}
 
